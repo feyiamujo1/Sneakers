@@ -1,7 +1,6 @@
 /* Function for changing images in full or large screen devices */
 function changeImage(n){
     var thumbnail = document.getElementsByClassName("thumbnail_container");
-    console.log(thumbnail.length);
     for (i = 0; i < thumbnail.length; i++) {
         thumbnail[i].className = thumbnail[i].className.replace(" selected_thumbnail", "");
       }
@@ -75,9 +74,11 @@ function decreaseQuantity(){
 function hidesidebar(){
   var sidebar = document.getElementById("sidebar");
   sidebar.style.display="none";
+  document.body.style.position="";
 }
 
 function showsidebar(){
   var sidebar = document.getElementById("sidebar");
   sidebar.style.display = "block";
+  document.body.style.position="fixed";
 }
