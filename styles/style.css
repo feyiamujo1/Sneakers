@@ -22,6 +22,7 @@ nav{
     border-bottom: 1px solid #d1d4dd;
     padding: 0px 50px 15px;
     margin: auto;
+    
 }
 .nav_info{
     display: inline-flex;
@@ -45,10 +46,28 @@ nav .nav_links{
 }
 nav .nav_account{
     padding: 10px;
+    box-sizing: border-box;
+}
+#order_number{
+    position: absolute;
+    top: 2%;
+    background-color: #fd7e1e;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 0px 7px;
+    text-align: center;
+    font-size: 12px;
 }
 .nav_account .profile_image{
     height: 50px;
 }
+
+.nav_account .profile_image:hover{
+    border-radius: 50%;
+    border: 2px solid #d08951;
+}
+
 .nav_account .cart_image{
     padding-bottom: 15px;
     padding-right: 50px;
@@ -206,9 +225,9 @@ main{
     text-align: right;
 }
 
-.minus:active, .plus:active{
-    background-color: black;
-}
+/*.minus:hover img, .plus:hover img{
+    
+}*/
 /*Add to cart button */
 #btn_add{
     margin:0px;
@@ -221,6 +240,10 @@ main{
     border-radius: 7px;
     padding: 10px 55px 12px;
     cursor: pointer;
+}
+
+#btn_add:hover{
+    background-color: #ffac6a;
 }
 
 /*cart image in the add to cart button */
