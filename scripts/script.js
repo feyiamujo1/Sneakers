@@ -82,3 +82,11 @@ function showsidebar(){
   sidebar.style.display = "block";
   document.body.style.position="fixed";
 }
+
+/* Function for placing order */
+var Orderplaced = 0;
+function placeOrder(){
+  var currentOrder = document.getElementById("product_quantity").textContent;
+  Orderplaced = parseInt(Orderplaced) + parseInt(currentOrder);
+  document.getElementById("order_number").innerHTML = Orderplaced;
+}
