@@ -28,8 +28,24 @@
             </div>
             <div class="nav_account">
                 <p id="order_number"> </p>
-                <img class="cart_image" src="images/icon-cart.svg" alt="icon-cart">
+                <img class="cart_image" onclick="toggle_dialog()" src="images/icon-cart.svg" alt="icon-cart">
                 <img class="profile_image" src="images/image-avatar.png" alt="image-avatar">
+                <div id="checkout_dialog" class="checkout_dialog">
+                    <h5>Cart</h5>
+                    
+                    <!--<p>Your cart is empty.</p>-->
+                    <div id="inner_dialog" class="inner_dialog">
+                        <div><img class="thumbnail_image" src="images/image-product-1-thumbnail.jpg" alt="thumbnail image"></div>
+                        <div>
+                            <p>Fall Limited Edition Sneakers <br>
+                            <span>$125.00 x </span><span id="amount_of_product">3</span> <strong>$<span id="total_cost">375.00</span></strong></p>
+                        </div>
+                        <div><img class="delete_image" onclick="delete_order()" src="images/icon-delete.svg" alt=""></div>
+                        
+                    </div>
+                    <button type="button" id="checkout_btn" class="checkout_btn">Checkout</button>
+                        <p id="empty_notice">Your cart is empty.</p>
+                </div>
             </div>
         </nav>
         <main>
