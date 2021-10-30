@@ -111,7 +111,7 @@ function checkQuantity(){
 var showdialog = false;
 /*function to show / hide the checkout dialog */
 function toggle_dialog(){
-  checkQuantity()
+  checkQuantity();
   var checkout_dialog = document.getElementById("checkout_dialog");
   if (showdialog==false){
     checkout_dialog.style.display = "block";
@@ -128,4 +128,5 @@ function delete_order(){
   Orderplaced = parseInt(0);
   checkQuantity();
   document.getElementById("order_number").innerHTML = "";
+  document.getElementById("product_quantity").innerHTML = 0;
 }

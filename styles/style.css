@@ -76,12 +76,12 @@ nav .nav_account{
     padding-right: 50px;
     
 }
-.nav_account .cart_image:hover{
+/*.nav_account .cart_image:hover{
     filter: brightness(0.1);
 }
 .nav_account .cart_image:active{
     filter: brightness(0.1);
-}
+}*/
 /* For the Checkout dialog */
 .checkout_dialog{
     display: none;
@@ -91,8 +91,8 @@ nav .nav_account{
     width: 295px;
     box-sizing: border-box;
     box-shadow: 0px 5px 8px #cbcbcb;
-    top: 14%;
-    right: 13%;
+    top: 13%;
+    right: 12%;
 }
 
 .checkout_dialog h5{
@@ -360,6 +360,10 @@ main{
     #btn_add{
         padding:  10px 35px 12px;
     }
+    .checkout_dialog{
+        top: 9%;
+        right: 1%;
+    }
 }
 
 /*setting component properties for 768px screen size and below */
@@ -405,6 +409,11 @@ main{
     .nav_account .cart_image{
         padding-right: 10px;
         margin-bottom: 2px;
+    }
+    .checkout_dialog{
+        top: 10%;
+        right: 2%;
+        box-shadow: none;
     }
     #sidebar{
 
